@@ -27,3 +27,12 @@ int ldrValue = 0; /**< @brief Stores the most recent analogRead() result */
  *
  * @note No parameters or return value. Side effects: opens Serial.
  */
+void setup() {
+
+    Serial.begin(9600);
+
+    Serial.println("=================================");
+    Serial.println("  LDR Light Intensity Monitor");
+    Serial.println("  System Initializing...");
+    Serial.println("=================================");
+}

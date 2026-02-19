@@ -47,3 +47,24 @@ void setup() {
  * @note No parameters or return value. Side effects: performs analogRead()
  * and writes to Serial.
  */
+void loop() {
+
+    ldrValue = analogRead(LDR_PIN);
+
+    Serial.print("Raw ADC Value: ");
+    Serial.println(ldrValue);
+
+    String brightnessStatus;
+
+    if (ldrValue < 500) {
+        brightnessStatus = "Bright Environment";
+    } else {
+        brightnessStatus = "Dark Environment";
+    }
+
+    Serial.print("Status: ");
+    Serial.println(brightnessStatus);
+    Serial.println("---------------------------------");
+
+    delay(1000);
+}

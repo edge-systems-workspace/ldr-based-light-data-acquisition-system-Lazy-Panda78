@@ -36,3 +36,14 @@ void setup() {
     Serial.println("  System Initializing...");
     Serial.println("=================================");
 }
+/**
+ * @brief Main Arduino loop
+ *
+ * Reads the analog value from the LDR pin, prints the raw ADC value, and
+ * classifies the environment as either "Bright Environment" or
+ * "Dark Environment" based on a simple threshold. The results are written
+ * to the Serial Monitor once per second.
+ *
+ * @note No parameters or return value. Side effects: performs analogRead()
+ * and writes to Serial.
+ */

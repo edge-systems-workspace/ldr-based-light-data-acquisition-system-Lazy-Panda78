@@ -18,3 +18,12 @@ int LDR_PIN = A0; /**< @brief Analog pin used to read LDR voltage */
 
 // Last-read raw ADC value from the LDR circuit
 int ldrValue = 0; /**< @brief Stores the most recent analogRead() result */
+/**
+ * @brief Arduino setup routine
+ *
+ * Initializes Serial communication at 9600 baud and prints a startup banner
+ * to the Serial Monitor. This function runs once when the board powers up
+ * or resets.
+ *
+ * @note No parameters or return value. Side effects: opens Serial.
+ */
